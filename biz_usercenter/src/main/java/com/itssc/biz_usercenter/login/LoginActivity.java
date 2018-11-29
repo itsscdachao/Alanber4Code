@@ -1,9 +1,9 @@
-package com.itssc.alanber4code.ui.login;
+package com.itssc.biz_usercenter.login;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.itssc.alanber4code.R;
+import com.itssc.biz_usercenter.R;
 
 public class LoginActivity extends Activity {
 

@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    //默认配置
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        multiDexEnabled true
+        flavorDimensions "default"//必须要保证所有的flavor 都属于同一个维度
+    }
+
+    //构建类型
+    buildTypes {
+        debug {
+            minifyEnabled false
+            zipAlignEnabled false
+            debuggable true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            debuggable false
+            shrinkResources true//为了使用shrinkResources,你必须启用代码压缩 minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //产品族
+    productFlavors {
+        alanber {}
+    }
+
+    //签名
+    signingConfigs {
+        release {
+            storeFile file(STORE_PATH)
+            storePassword STORE_PASSWORD
+            keyAlias ALIAS
+            keyPassword ALIAS_PASSWORD
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation project(':biz_usercenter')
+}

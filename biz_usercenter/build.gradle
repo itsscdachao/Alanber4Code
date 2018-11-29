@@ -1,16 +1,14 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
 
-    //默认配置
     defaultConfig {
-        applicationId rootProject.ext.android.applicationId
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
-        flavorDimensions "default"//必须要保证所有的flavor 都属于同一个维度
+        multiDexEnabled true
     }
 
     //构建类型
@@ -19,7 +17,6 @@ android {
             minifyEnabled false
             zipAlignEnabled false
             debuggable true
-            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
@@ -27,14 +24,8 @@ android {
             minifyEnabled true
             zipAlignEnabled true
             debuggable false
-            shrinkResources true//为了使用shrinkResources,你必须启用代码压缩 minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-    }
-
-    //产品族
-    productFlavors {
-        alanber {}
     }
 
     //签名
@@ -46,9 +37,9 @@ android {
             keyPassword ALIAS_PASSWORD
         }
     }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }
