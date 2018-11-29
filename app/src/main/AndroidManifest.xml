@@ -19,6 +19,7 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -26,6 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity
             android:name=".WelcomeActivity"
             android:screenOrientation="portrait"/>
@@ -37,9 +39,6 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.login.LoginActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".ui.register.RegisterActivity"
             android:screenOrientation="portrait"/>
     </application>
 
