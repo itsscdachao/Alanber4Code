@@ -8,12 +8,33 @@ android {
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
+        multiDexEnabled true
     }
 
+    //构建类型
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
+            zipAlignEnabled false
+            debuggable true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //签名
+    signingConfigs {
+        release {
+            storeFile file(STORE_PATH)
+            storePassword STORE_PASSWORD
+            keyAlias ALIAS
+            keyPassword ALIAS_PASSWORD
         }
     }
 
