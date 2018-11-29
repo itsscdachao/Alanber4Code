@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
+        android:name=".AlanberApplication"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,7 +21,9 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".HomeActivity">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -32,10 +35,7 @@
             android:name=".WelcomeActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".SplashActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".base.BaseActivity"
+            android:name=".HomeActivity"
             android:screenOrientation="portrait"/>
     </application>
 
