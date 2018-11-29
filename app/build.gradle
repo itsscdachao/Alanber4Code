@@ -2,15 +2,18 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    //默认配置
     defaultConfig {
         applicationId rootProject.ext.android.applicationId
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "default"//必须要保证所有的flavor 都属于同一个维度
     }
 
+    //构建类型
     buildTypes {
         debug {
             minifyEnabled false
@@ -19,6 +22,7 @@ android {
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
         release {
             minifyEnabled true
             zipAlignEnabled true
@@ -28,6 +32,12 @@ android {
         }
     }
 
+    //产品族
+    productFlavors {
+        alanber {}
+    }
+
+    //签名
     signingConfigs {
         release {
             storeFile file(STORE_PATH)
