@@ -3,4 +3,8 @@
     <color name="grey_666666">#666666</color>
     <color name="white_ffffff">#ffffff</color>
     <color name="dark_000000">#000000</color>
+    <color name="red_d62d20">#d62d20</color>
+    <color name="blue_0057e7">#0057e7</color>
+    <color name="green_008744">#008744</color>
+    <color name="yellow_ffa700">#ffa700</color>
 </resources>
