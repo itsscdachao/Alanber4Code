@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.WindowManager;
 
 import com.itssc.tool_widget.R;
-import com.itssc.tool_widget.commonutil.ScreenUtil;
+import com.itssc.tool_widget.commonview.util.ScreenUtil;
 
 public class CommonDialog extends CommonBaseDialog implements IDialog {
     private static final String FTag = "dialogTag";

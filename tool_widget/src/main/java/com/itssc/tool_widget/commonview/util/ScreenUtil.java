@@ -1,4 +1,4 @@
-package com.itssc.tool_widget.commonutil;
+package com.itssc.tool_widget.commonview.util;
 
 import android.app.Activity;
 import android.content.res.Resources;
