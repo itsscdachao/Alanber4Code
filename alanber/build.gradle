@@ -51,8 +51,8 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    implementation 'com.android.support:multidex:1.0.1'
+    implementation rootProject.ext.dependencies.constraint_layout
+    implementation rootProject.ext.dependencies.multidex
     implementation rootProject.ext.dependencies.recyclerview
     implementation project(':biz_usercenter')
     implementation project(':tool_widget')
