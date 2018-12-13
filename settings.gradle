@@ -1,1 +1,1 @@
-include ':alanber', ':biz_usercenter', ':tool_widget', ':tool_network', ':tool_log', ':tool_imageloader', ':tool_push', ':tool_database'
+include ':alanber', ':biz_usercenter', ':tool_widget', ':tool_network', ':tool_log', ':tool_imageloader', ':tool_push', ':tool_database', ':tool_statistics', ':tool_videoplayer', ':tool_util'
