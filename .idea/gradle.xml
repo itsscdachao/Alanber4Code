@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/tool_log" />
             <option value="$PROJECT_DIR$/tool_network" />
             <option value="$PROJECT_DIR$/tool_push" />
+            <option value="$PROJECT_DIR$/tool_router" />
             <option value="$PROJECT_DIR$/tool_statistics" />
             <option value="$PROJECT_DIR$/tool_util" />
             <option value="$PROJECT_DIR$/tool_videoplayer" />

@@ -64,4 +64,5 @@ dependencies {
     implementation project(':tool_statistics')
     implementation project(':tool_util')
     implementation project(':tool_videoplayer')
+    implementation project(':tool_router')
 }
