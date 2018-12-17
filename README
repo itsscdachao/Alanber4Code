@@ -5,3 +5,18 @@
 
 Ⅱ.你该如何使用Alanber4Code
     1.略
+Ⅲ.工程架构原则
+   alanber4code
+   biz_xxx   承载业务逻辑
+   tool_xxx  承载业务逻辑
+
+   biz包和Alanber4code可以依赖tool包，反之不可
+   tool包之间不可以相互依赖
+   故tool包是可以独立存在和编译的，无耦合关系的moudle
+
+Ⅳ.工程编码原则
+   遵循MVP设计模式原则
+
+Ⅴ.
+
+Ⅵ.

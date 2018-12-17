@@ -1,4 +1,4 @@
-package com.itssc.alanber4code.Constant;
+package com.itssc.alanber4code.constant;
 
 /**
  * author：dachao on 2018/12/12 15:00

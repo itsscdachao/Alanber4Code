@@ -30,6 +30,26 @@ public class SplashActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+//        CommonAlertDialog.showAlertDialog(this);
+
+//        CommonAlertDialog infoDialog = new CommonAlertDialog.Builder(this)
+//                .setTitle("Done")
+//                .setMessage("Something done")
+//                .setLeftButtonListener("NOT OK", new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//
+//                    }
+//                })
+//                .setRightButtonListener("OK", new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//
+//                    }
+//                })
+//                .create();
+//        infoDialog.show();
     }
 
     /**
