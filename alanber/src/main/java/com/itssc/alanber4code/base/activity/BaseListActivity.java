@@ -1,9 +1,11 @@
-package com.itssc.alanber4code.base;
+package com.itssc.alanber4code.base.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-public class BaseActivity extends Activity {
+import com.itssc.alanber4code.base.fragment.IBaseFragment;
+
+public class BaseListActivity extends Activity implements IBaseFragment {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
