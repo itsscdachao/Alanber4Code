@@ -2,9 +2,9 @@ package com.itssc.alanber4code;
 
 import android.os.Bundle;
 
-import com.itssc.alanber4code.base.BaseActivity;
+import com.itssc.alanber4code.base.activity.BaseCommonActivity;
 
-public class WelcomeActivity extends BaseActivity {
+public class WelcomeActivity extends BaseCommonActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

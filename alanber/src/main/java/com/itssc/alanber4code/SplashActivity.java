@@ -15,14 +15,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.itssc.alanber4code.base.BaseActivity;
+import com.itssc.alanber4code.base.activity.BaseCommonActivity;
 import com.itssc.tool_widget.commonview.dialog.CommonDialog;
 import com.itssc.tool_widget.commonview.dialog.CommonDialogManager;
 import com.itssc.tool_widget.commonview.dialog.CommonDialogUtil;
 import com.itssc.tool_widget.commonview.dialog.DialogWrapper;
 import com.itssc.tool_widget.commonview.dialog.IDialog;
 
-public class SplashActivity extends BaseActivity {
+public class SplashActivity extends BaseCommonActivity {
 
     private CommonDialog dialog;
 
@@ -30,6 +30,26 @@ public class SplashActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+//        CommonAlertDialog.showAlertDialog(this);
+
+//        CommonAlertDialog infoDialog = new CommonAlertDialog.Builder(this)
+//                .setTitle("Done")
+//                .setMessage("Something done")
+//                .setLeftButtonListener("NOT OK", new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//
+//                    }
+//                })
+//                .setRightButtonListener("OK", new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//
+//                    }
+//                })
+//                .create();
+//        infoDialog.show();
     }
 
     /**

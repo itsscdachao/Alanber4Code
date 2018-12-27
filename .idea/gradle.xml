@@ -10,13 +10,15 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/alanber" />
             <option value="$PROJECT_DIR$/biz_usercenter" />
+            <option value="$PROJECT_DIR$/tool_audioplayer" />
             <option value="$PROJECT_DIR$/tool_database" />
+            <option value="$PROJECT_DIR$/tool_hotfix" />
             <option value="$PROJECT_DIR$/tool_imageloader" />
             <option value="$PROJECT_DIR$/tool_log" />
             <option value="$PROJECT_DIR$/tool_network" />
             <option value="$PROJECT_DIR$/tool_push" />
+            <option value="$PROJECT_DIR$/tool_router" />
             <option value="$PROJECT_DIR$/tool_statistics" />
-            <option value="$PROJECT_DIR$/tool_util" />
             <option value="$PROJECT_DIR$/tool_videoplayer" />
             <option value="$PROJECT_DIR$/tool_widget" />
           </set>
