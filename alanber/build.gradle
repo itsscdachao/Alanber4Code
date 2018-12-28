@@ -66,4 +66,5 @@ dependencies {
     implementation project(':tool_audioplayer')
     implementation project(':tool_router')
     implementation project(':tool_hotfix')
+    implementation project(':tool_permission')
 }
