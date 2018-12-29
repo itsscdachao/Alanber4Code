@@ -1,5 +1,11 @@
 package com.itssc.alanber4code.base.presenter;
 
-public interface BaseListPresenter extends IBasePresenter {
-    
+import com.itssc.alanber4code.base.view.IBaseListView;
+
+/**
+ * 列表样式页面Presenter
+ * @param <T>
+ */
+public abstract class BaseListPresenter<T extends IBaseListView> implements IBasePresenter<T> {
+
 }
