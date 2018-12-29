@@ -8,6 +8,7 @@ import com.itssc.alanber4code.base.view.IBaseView;
 
 /**
  * 普通样式Activity
+ *
  * @param <T>
  */
 public abstract class BaseCommonActivity<T extends BaseCommonPresenter> extends Activity implements IBaseActivity, IBaseView {
@@ -19,7 +20,9 @@ public abstract class BaseCommonActivity<T extends BaseCommonPresenter> extends 
         super.onCreate(savedInstanceState);
         setContentView(getLayoutResId());
         mPresenter = createPresenter();
-        mPresenter.attachView(this);
+        if (mPresenter != null) {
+            mPresenter.attachView(this);
+        }
     }
 
     protected abstract int getLayoutResId();
@@ -29,6 +32,8 @@ public abstract class BaseCommonActivity<T extends BaseCommonPresenter> extends 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mPresenter.detachView();
+        if (mPresenter != null) {
+            mPresenter.detachView();
+        }
     }
 }

@@ -1,6 +1,5 @@
 package com.itssc.alanber4code;
 
-import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -27,9 +26,9 @@ public class SplashActivity extends BaseCommonActivity {
 
     private CommonDialog dialog;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
 
 //        CommonAlertDialog.showAlertDialog(this);
 
@@ -50,7 +49,7 @@ public class SplashActivity extends BaseCommonActivity {
 //                })
 //                .create();
 //        infoDialog.show();
-    }
+//    }
 
     @Override
     protected BaseCommonPresenter createPresenter() {

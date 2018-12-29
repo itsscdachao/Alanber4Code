@@ -1,16 +1,9 @@
 package com.itssc.alanber4code;
 
-import android.os.Bundle;
-
 import com.itssc.alanber4code.base.activity.BaseCommonActivity;
 import com.itssc.alanber4code.base.presenter.BaseCommonPresenter;
 
 public class HomeActivity extends BaseCommonActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
 
     @Override
     protected BaseCommonPresenter createPresenter() {

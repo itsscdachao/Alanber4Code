@@ -10,6 +10,7 @@ import com.itssc.alanber4code.base.view.IBaseView;
 
 /**
  * 列表样式Fragment
+ *
  * @param <T>
  */
 public abstract class BaseListFragment<T extends BaseListPresenter> extends Fragment implements IBaseFragment, IBaseView {
@@ -20,7 +21,9 @@ public abstract class BaseListFragment<T extends BaseListPresenter> extends Frag
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mPresenter = createPresenter();
-        mPresenter.attachView(this);
+        if (mPresenter != null) {
+            mPresenter.attachView(this);
+        }
     }
 
     public abstract T createPresenter();
@@ -33,7 +36,9 @@ public abstract class BaseListFragment<T extends BaseListPresenter> extends Frag
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        mPresenter.detachView();
+        if (mPresenter != null) {
+            mPresenter.detachView();
+        }
     }
 
     @Override

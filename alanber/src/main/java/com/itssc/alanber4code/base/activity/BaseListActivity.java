@@ -9,6 +9,7 @@ import com.itssc.alanber4code.base.view.IBaseView;
 
 /**
  * 列表样式Activity
+ *
  * @param <T>
  */
 public abstract class BaseListActivity<T extends BaseListPresenter> extends Activity implements IBaseFragment, IBaseView {
@@ -20,10 +21,20 @@ public abstract class BaseListActivity<T extends BaseListPresenter> extends Acti
         super.onCreate(savedInstanceState);
         setContentView(getLayoutResId());
         mPresenter = createPresenter();
-        mPresenter.attachView(this);
+        if (mPresenter != null) {
+            mPresenter.attachView(this);
+        }
     }
 
     protected abstract int getLayoutResId();
 
     protected abstract T createPresenter();
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mPresenter != null) {
+            mPresenter.detachView();
+        }
+    }
 }
