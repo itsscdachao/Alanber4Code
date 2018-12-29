@@ -22,9 +22,9 @@ public abstract class BaseCommonActivity<T extends BaseCommonPresenter> extends 
         mPresenter.attachView(this);
     }
 
-    protected abstract T createPresenter();
-
     protected abstract int getLayoutResId();
+
+    protected abstract T createPresenter();
 
     @Override
     protected void onDestroy() {

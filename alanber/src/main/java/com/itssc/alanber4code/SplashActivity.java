@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.itssc.alanber4code.base.activity.BaseCommonActivity;
+import com.itssc.alanber4code.base.presenter.BaseCommonPresenter;
 import com.itssc.tool_widget.commonview.dialog.CommonDialog;
 import com.itssc.tool_widget.commonview.dialog.CommonDialogManager;
 import com.itssc.tool_widget.commonview.dialog.CommonDialogUtil;
@@ -29,7 +30,6 @@ public class SplashActivity extends BaseCommonActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
 
 //        CommonAlertDialog.showAlertDialog(this);
 
@@ -50,6 +50,16 @@ public class SplashActivity extends BaseCommonActivity {
 //                })
 //                .create();
 //        infoDialog.show();
+    }
+
+    @Override
+    protected BaseCommonPresenter createPresenter() {
+        return null;
+    }
+
+    @Override
+    protected int getLayoutResId() {
+        return R.layout.activity_splash;
     }
 
     /**
@@ -337,6 +347,26 @@ public class SplashActivity extends BaseCommonActivity {
                         });
                     }
                 }).show();
+    }
+
+    @Override
+    public void showLoadingView() {
+
+    }
+
+    @Override
+    public void hideLoadingView() {
+
+    }
+
+    @Override
+    public void showEmptyLayout() {
+
+    }
+
+    @Override
+    public void hideEmptyLayout() {
+
     }
 
     class ShareAdapter extends RecyclerView.Adapter<ShareAdapter.ShareHolder> {

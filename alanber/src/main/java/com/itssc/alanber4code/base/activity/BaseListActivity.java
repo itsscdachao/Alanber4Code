@@ -23,7 +23,7 @@ public abstract class BaseListActivity<T extends BaseListPresenter> extends Acti
         mPresenter.attachView(this);
     }
 
-    protected abstract T createPresenter();
-
     protected abstract int getLayoutResId();
+
+    protected abstract T createPresenter();
 }
