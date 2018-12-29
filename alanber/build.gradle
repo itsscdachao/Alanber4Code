@@ -67,4 +67,5 @@ dependencies {
     implementation project(':tool_router')
     implementation project(':tool_hotfix')
     implementation project(':tool_permission')
+    implementation project(':tool_dynamic_components')
 }
