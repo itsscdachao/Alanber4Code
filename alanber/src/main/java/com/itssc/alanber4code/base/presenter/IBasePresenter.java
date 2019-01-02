@@ -1,7 +1,11 @@
 package com.itssc.alanber4code.base.presenter;
 
+import com.itssc.alanber4code.base.view.IBaseView;
+
 /**
- * author：dachao on 2018/12/27 20:11
+ * MVP的P层,定义最基本且共有的Presenter方法
  */
-public interface IBasePresenter {
+public interface IBasePresenter<T extends IBaseView> {
+    void attachView(T view);
+    void detachView();
 }

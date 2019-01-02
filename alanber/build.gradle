@@ -55,6 +55,7 @@ dependencies {
     implementation rootProject.ext.dependencies.multidex
     implementation rootProject.ext.dependencies.recyclerview
     implementation project(':biz_usercenter')
+    implementation project(':tool_base')
     implementation project(':tool_widget')
     implementation project(':tool_log')
     implementation project(':tool_push')
@@ -68,4 +69,9 @@ dependencies {
     implementation project(':tool_hotfix')
     implementation project(':tool_permission')
     implementation project(':tool_dynamic_components')
+    implementation project(':tool_flutter')
+    implementation project(':tool_reactnative')
+    implementation project(':tool_webview')
+    implementation project(':tool_share')
+    implementation project(':tool_upgrade')
 }

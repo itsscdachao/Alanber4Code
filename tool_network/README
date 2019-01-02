@@ -1,0 +1,6 @@
+Ⅰ.网络框架采用 RxJava + Retrofit + MVP结构设计
+  整体设计结构采用包装模式，支持替换核心请求库，例如：Retrofit换成Volley
+
+Ⅱ.
+
+Ⅲ.
