@@ -8,7 +8,7 @@
 Ⅲ.工程架构原则
    alanber4code
    biz_xxx   承载业务逻辑
-   tool_xxx  承载业务逻辑
+   tool_xxx  承载代码架构设计逻辑
 
    biz包和Alanber4code可以依赖tool包，反之不可
    tool包之间不可以相互依赖
