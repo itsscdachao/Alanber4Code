@@ -1,4 +1,4 @@
-include ':alanber', ':tool_dynamic_components'
+include ':alanber', ':tool_dynamic_components', ':tool_webview', ':tool_flutter', ':tool_reactnative'
 include ':biz_usercenter'
 include ':tool_widget'
 include ':tool_network'

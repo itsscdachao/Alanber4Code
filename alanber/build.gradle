@@ -68,4 +68,7 @@ dependencies {
     implementation project(':tool_hotfix')
     implementation project(':tool_permission')
     implementation project(':tool_dynamic_components')
+    implementation project(':tool_flutter')
+    implementation project(':tool_reactnative')
+    implementation project(':tool_webview')
 }
