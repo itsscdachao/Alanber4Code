@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/alanber" />
             <option value="$PROJECT_DIR$/biz_usercenter" />
             <option value="$PROJECT_DIR$/tool_audioplayer" />
+            <option value="$PROJECT_DIR$/tool_base" />
             <option value="$PROJECT_DIR$/tool_database" />
             <option value="$PROJECT_DIR$/tool_dynamic_components" />
             <option value="$PROJECT_DIR$/tool_flutter" />
@@ -22,7 +23,9 @@
             <option value="$PROJECT_DIR$/tool_push" />
             <option value="$PROJECT_DIR$/tool_reactnative" />
             <option value="$PROJECT_DIR$/tool_router" />
+            <option value="$PROJECT_DIR$/tool_share" />
             <option value="$PROJECT_DIR$/tool_statistics" />
+            <option value="$PROJECT_DIR$/tool_upgrade" />
             <option value="$PROJECT_DIR$/tool_videoplayer" />
             <option value="$PROJECT_DIR$/tool_webview" />
             <option value="$PROJECT_DIR$/tool_widget" />
