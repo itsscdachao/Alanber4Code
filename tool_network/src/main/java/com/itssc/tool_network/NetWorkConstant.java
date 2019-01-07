@@ -1,7 +1,7 @@
-package com.itssc.alanber4code.constant;
+package com.itssc.tool_network;
 
 /**
- * author：dachao on 2018/12/12 15:00
+ * 网络框架常量
  */
 public class NetWorkConstant {
     /**
@@ -12,5 +12,5 @@ public class NetWorkConstant {
     /**
      * 网络超时重试次数
      */
-    public static final int HTTP_REQUEST_RETRY_COUNT = 3;
+    public static final int HTTP_REQUEST_RETRY_TIMES = 3;
 }

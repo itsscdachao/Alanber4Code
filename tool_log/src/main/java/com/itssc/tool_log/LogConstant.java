@@ -1,4 +1,4 @@
-package com.itssc.alanber4code.constant;
+package com.itssc.tool_log;
 
 /**
  * author：dachao on 2018/12/12 15:00
