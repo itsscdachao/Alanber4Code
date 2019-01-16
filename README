@@ -10,9 +10,8 @@
    biz_xxx   承载业务逻辑
    tool_xxx  承载代码架构设计逻辑
 
-   biz包和Alanber4code可以依赖tool包，反之不可
-   tool包之间不可以相互依赖
-   故tool包是可以独立存在和编译的，无耦合关系的moudle
+   moudle于moudle之前的关联原则是，必须以接口的方式暴露api供使用，不可以逻辑强依赖
+   故moudle之间都是可以独立存在和编译的，是相互无耦合关系的
 
 Ⅳ.工程编码原则
    遵循MVP设计模式原则

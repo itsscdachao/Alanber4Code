@@ -72,4 +72,6 @@ dependencies {
     implementation project(':tool_webview')
     implementation project(':tool_share')
     implementation project(':tool_upgrade')
+    implementation project(':tool_alanberlog')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }
