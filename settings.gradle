@@ -1,4 +1,4 @@
-include ':alanber'
+include ':alanber', ':tool_alanberlog'
 include ':tool_upgrade'
 include ':tool_dynamic_components'
 include ':tool_webview'

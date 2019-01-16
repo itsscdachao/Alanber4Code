@@ -20,9 +20,8 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
         <activity
-            android:name=".SplashActivity"
+            android:name=".HomeActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -30,12 +29,17 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
         <activity
             android:name=".WelcomeActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".HomeActivity"
+            android:name=".AlanberDialogTestActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".alanberlog.AlanberLogTestActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AlanberPopupWindowTestActivity"
             android:screenOrientation="portrait"/>
     </application>
 

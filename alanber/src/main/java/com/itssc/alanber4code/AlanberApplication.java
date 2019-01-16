@@ -4,6 +4,8 @@ import android.app.Application;
 import android.content.Context;
 import android.support.multidex.MultiDex;
 
+import com.itssc.alanber4code.alanberlog.AlanberLogInit;
+
 public class AlanberApplication extends Application {
 
     @Override
@@ -15,5 +17,6 @@ public class AlanberApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        AlanberLogInit.init(this);
     }
 }
