@@ -1,37 +1,13 @@
 package com.itssc.alanber4code;
 
-import com.itssc.alanber4code.base.activity.BaseCommonActivity;
-import com.itssc.alanber4code.base.presenter.BaseCommonPresenter;
+import android.app.Activity;
+import android.os.Bundle;
 
-public class HomeActivity extends BaseCommonActivity {
-
-    @Override
-    protected BaseCommonPresenter createPresenter() {
-        return null;
-    }
+public class HomeActivity extends Activity {
 
     @Override
-    protected int getLayoutResId() {
-        return R.layout.activity_home;
-    }
-
-    @Override
-    public void showLoadingView() {
-
-    }
-
-    @Override
-    public void hideLoadingView() {
-
-    }
-
-    @Override
-    public void showEmptyLayout() {
-
-    }
-
-    @Override
-    public void hideEmptyLayout() {
-
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
     }
 }

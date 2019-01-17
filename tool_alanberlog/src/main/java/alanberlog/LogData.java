@@ -26,7 +26,7 @@ public class LogData {
     public static LogData obtain(int logLevel, String tag, String msg) {
         LogData obtain = obtain();
         obtain.logLevel = logLevel;
-        obtain.tag = tag;
+        obtain.tag = tag + " --------------------" + "\n";
         obtain.msg = msg;
         return obtain;
     }
