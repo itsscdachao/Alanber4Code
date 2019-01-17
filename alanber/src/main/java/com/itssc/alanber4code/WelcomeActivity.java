@@ -11,6 +11,11 @@ public class WelcomeActivity extends BaseCommonActivity {
     }
 
     @Override
+    protected void initSomething() {
+
+    }
+
+    @Override
     protected int getLayoutResId() {
         return R.layout.activity_welcome;
     }

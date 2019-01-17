@@ -21,7 +21,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".HomeActivity"
+            android:name=".TestActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -31,6 +31,12 @@
         </activity>
         <activity
             android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".HomeActivity"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".AlanberDialogTestActivity"
