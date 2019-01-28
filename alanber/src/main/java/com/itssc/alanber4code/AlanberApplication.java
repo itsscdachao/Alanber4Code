@@ -5,6 +5,7 @@ import android.content.Context;
 import android.support.multidex.MultiDex;
 
 import com.itssc.alanber4code.alanberlog.AlanberLogInit;
+import com.itssc.alanber4code.crash_spider.CrashSpiderTool;
 
 public class AlanberApplication extends Application {
 
@@ -17,6 +18,9 @@ public class AlanberApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        //放在其他库初始化前
+        CrashSpiderTool.init(this);
+        //初始化NativeLog
         AlanberLogInit.init(this);
     }
 }

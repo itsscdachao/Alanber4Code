@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">librarylog4a</string>
+    <string name="simpleCopyText">拷贝崩溃文本</string>
+    <string name="simpleShareText">分享崩溃文本</string>
+    <string name="simpleShareImage">分享崩溃图片</string>
 </resources>

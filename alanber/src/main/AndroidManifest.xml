@@ -20,6 +20,17 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+
+        <provider
+            android:name="com.itssc.alanber4code.crash_spider.CrashSpiderFileProvider"
+            android:authorities="${applicationId}.CrashSpiderFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
         <activity
             android:name=".TestActivity"
             android:screenOrientation="portrait">
@@ -47,6 +58,13 @@
         <activity
             android:name=".AlanberPopupWindowTestActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CrashTestActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".crash_spider.CrashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
     </application>
 
 </manifest>
