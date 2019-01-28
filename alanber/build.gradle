@@ -54,6 +54,7 @@ dependencies {
     implementation rootProject.ext.dependencies.constraint_layout
     implementation rootProject.ext.dependencies.multidex
     implementation rootProject.ext.dependencies.recyclerview
+    implementation rootProject.ext.dependencies.appcompat_v7
     implementation project(':biz_usercenter')
     implementation project(':tool_base')
     implementation project(':tool_widget')

@@ -245,10 +245,4 @@ public class AlanberLogTestActivity extends Activity {
             }
         }
     }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        AlanberLog.flush();
-    }
 }
