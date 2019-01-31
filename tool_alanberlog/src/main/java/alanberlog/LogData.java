@@ -1,6 +1,7 @@
 package alanberlog;
 
 public class LogData {
+    private static final String splitStr = " ------------------------------------------------------------";
     public int logLevel;
     public String tag;
     public String msg;
@@ -26,7 +27,7 @@ public class LogData {
     public static LogData obtain(int logLevel, String tag, String msg) {
         LogData obtain = obtain();
         obtain.logLevel = logLevel;
-        obtain.tag = tag + " --------------------" + "\n";
+        obtain.tag = tag + splitStr + "\n";
         obtain.msg = msg;
         return obtain;
     }
