@@ -77,4 +77,5 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation project(':tool_audiorecorder')
     implementation project(':tool_videorecorder')
+    implementation project(':tool_takephoto')
 }
