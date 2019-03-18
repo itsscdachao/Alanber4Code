@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 
-import com.itssc.tool_base.base_mvp.fragment.IBaseFragment;
 import com.itssc.tool_base.base_mvp.presenter.BaseListPresenter;
 import com.itssc.tool_base.base_mvp.view.IBaseView;
 
@@ -13,7 +12,7 @@ import com.itssc.tool_base.base_mvp.view.IBaseView;
  *
  * @param <T>
  */
-public abstract class BaseListActivity<T extends BaseListPresenter> extends AppCompatActivity implements IBaseFragment, IBaseView {
+public abstract class BaseListActivity<T extends BaseListPresenter> extends AppCompatActivity implements IBaseActivity, IBaseView {
 
     private T mPresenter;
 
@@ -24,10 +23,10 @@ public abstract class BaseListActivity<T extends BaseListPresenter> extends AppC
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(getLayoutResId());
         initViewAndData();
-        mPresenter = createPresenter();
-        if (mPresenter != null) {
-            mPresenter.attachView(this);
-        }
+//        mPresenter = createPresenter();
+//        if (mPresenter != null) {
+//            mPresenter.attachView(this);
+//        }
     }
 
     protected abstract int getLayoutResId();
@@ -39,8 +38,8 @@ public abstract class BaseListActivity<T extends BaseListPresenter> extends AppC
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (mPresenter != null) {
-            mPresenter.detachView();
-        }
+//        if (mPresenter != null) {
+//            mPresenter.detachView();
+//        }
     }
 }

@@ -28,10 +28,10 @@ public abstract class BaseCommonFragment<T extends BaseCommonPresenter> extends 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        mPresenter = createPresenter();
-        if (mPresenter != null) {
-            mPresenter.attachView(this);
-        }
+//        mPresenter = createPresenter();
+//        if (mPresenter != null) {
+//            mPresenter.attachView(this);
+//        }
         View view = inflater.inflate(getLayoutResId(), container, false);
         initViewAndData(view);
         return view;
@@ -52,9 +52,9 @@ public abstract class BaseCommonFragment<T extends BaseCommonPresenter> extends 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        if (mPresenter != null) {
-            mPresenter.detachView();
-        }
+//        if (mPresenter != null) {
+//            mPresenter.detachView();
+//        }
     }
 
     @Override

@@ -24,15 +24,26 @@ ext {
 
             imageloader_glide  : "com.github.bumptech.glide:glide:4.8.0",
             imageloader_picasso: "com.squareup.picasso:picasso:2.71828",
-            eventbus           : 'org.greenrobot:eventbus:3.1.1'
+
+            eventbus           : 'org.greenrobot:eventbus:3.1.1',
+
+            gson               : 'com.google.code.gson:gson:2.8.0'
+    ]
+
+    okhttp = [
+            okhttp             : 'com.squareup.okhttp3:okhttp:3.13.1',
+            log_interceptor        : 'com.squareup.okhttp3:logging-interceptor:3.9.0',
     ]
 
     retrofit = [
-
+            retrofit       : 'com.squareup.retrofit2:retrofit:2.5.0',
+            converter_gson : 'com.squareup.retrofit2:converter-gson:2.5.0',
+            adapter_rxjava2: 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
     ]
 
     rxJava = [
-
+            rxjava   : 'io.reactivex.rxjava2:rxjava:2.2.7',
+            rxandroid: 'io.reactivex.rxjava2:rxandroid:2.1.1'
     ]
 
 }
