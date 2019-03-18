@@ -9,4 +9,10 @@
     <color name="yellow_ffa700">#ffa700</color>
 
     <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+
+    <color name="graylight">#dddddd</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="graydark">#777777</color>
+    <color name="graydarker">#555555</color>
+    <color name="black">#333333</color>
 </resources>

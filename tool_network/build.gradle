@@ -42,4 +42,16 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation rootProject.ext.okhttp.okhttp
+    implementation rootProject.ext.okhttp.log_interceptor
+
+    implementation rootProject.ext.dependencies.gson
+
+    implementation rootProject.ext.retrofit.retrofit
+    implementation rootProject.ext.retrofit.converter_gson
+    implementation rootProject.ext.retrofit.adapter_rxjava2
+
+    implementation rootProject.ext.rxJava.rxjava
+    implementation rootProject.ext.rxJava.rxandroid
 }

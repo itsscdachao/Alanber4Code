@@ -33,6 +33,12 @@ android {
         }
     }
 
+    //指定jdk版本
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     //产品族
     productFlavors {
         alanber {}
@@ -74,7 +80,7 @@ dependencies {
     implementation project(':tool_share')
     implementation project(':tool_upgrade')
     implementation project(':tool_alanberlog')
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation project(':tool_audiorecorder')
     implementation project(':tool_videorecorder')
+    implementation project(':tool_takephoto')
 }

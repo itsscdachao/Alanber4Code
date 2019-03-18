@@ -24,10 +24,10 @@ public abstract class BaseCommonActivity<T extends BaseCommonPresenter> extends 
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(getLayoutResId());
         initViewAndData();
-        mPresenter = createPresenter();
-        if (mPresenter != null) {
-            mPresenter.attachView(this);
-        }
+//        mPresenter = createPresenter();
+//        if (mPresenter != null) {
+//            mPresenter.attachView(this);
+//        }
     }
 
     protected abstract int getLayoutResId();
@@ -39,8 +39,8 @@ public abstract class BaseCommonActivity<T extends BaseCommonPresenter> extends 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (mPresenter != null) {
-            mPresenter.detachView();
-        }
+//        if (mPresenter != null) {
+//            mPresenter.detachView();
+//        }
     }
 }
