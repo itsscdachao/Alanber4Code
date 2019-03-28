@@ -76,6 +76,7 @@ dependencies {
     implementation project(':tool_hotfix')
     implementation project(':tool_permission')
     implementation project(':tool_dynamic_components')
+    implementation project(':tool_navigation_location')
     implementation project(':tool_webview')
     implementation project(':tool_share')
     implementation project(':tool_upgrade')
