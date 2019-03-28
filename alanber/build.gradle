@@ -83,4 +83,6 @@ dependencies {
     implementation project(':tool_audiorecorder')
     implementation project(':tool_videorecorder')
     implementation project(':tool_takephoto')
+    implementation project(':tool_flutter')
+    implementation project(':tool_rn')
 }
