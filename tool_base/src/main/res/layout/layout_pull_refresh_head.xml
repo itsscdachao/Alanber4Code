@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@mipmap/ptl_arrow_down"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minEms="6"
+        android:text="松开更新"
+        android:textColor="#777777"
+        android:textSize="14sp"/>
+
+</LinearLayout>
