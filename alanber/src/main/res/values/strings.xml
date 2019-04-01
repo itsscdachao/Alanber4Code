@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Alanber4Code</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="simpleCopyText">拷贝崩溃文本</string>
+    <string name="simpleShareText">分享崩溃文本</string>
+    <string name="simpleShareImage">分享崩溃图片</string>
 </resources>

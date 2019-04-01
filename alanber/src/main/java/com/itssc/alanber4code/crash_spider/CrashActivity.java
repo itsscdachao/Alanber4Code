@@ -26,20 +26,19 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.itssc.alanber4code.R;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 
-import alanberlog.R;
-
 public class CrashActivity extends AppCompatActivity {
     public static final String CRASH_MODEL = "crash_model";
     @SuppressLint("SimpleDateFormat")
     private SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
     private CrashModel model;
-    private View root;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +51,6 @@ public class CrashActivity extends AppCompatActivity {
         }
         Log.e("CrashSpiderTool", Log.getStackTraceString(model.getEx()));
 
-        root = findViewById(R.id.root);
         TextView tv_packageName = findViewById(R.id.tv_packageName);
         TextView textMessage = findViewById(R.id.textMessage);
         TextView tv_className = findViewById(R.id.tv_className);
