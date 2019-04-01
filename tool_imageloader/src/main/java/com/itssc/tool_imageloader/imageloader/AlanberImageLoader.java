@@ -7,7 +7,7 @@ import com.itssc.tool_imageloader.config.AlanberImageLoaderConfig;
 import com.itssc.tool_imageloader.listener.AlanberImageLoadingListener;
 import com.itssc.tool_imageloader.listener.AlanberImageLoadingProgressListener;
 import com.itssc.tool_imageloader.manager.GlideImageLoader;
-import com.itssc.tool_imageloader.manager.PicassoImageLoader;
+import com.itssc.tool_imageloader.manager.FrescoImageLoader;
 import com.itssc.tool_imageloader.proxy.AlanberImageLoaderProxy;
 
 /**
@@ -32,8 +32,8 @@ public class AlanberImageLoader implements AlanberImageLoaderProxy {
     public AlanberImageLoader() {
         if (AlanberImageLoaderConfig.getImageLoaderManager() == AlanberImageLoaderConfig.TYPE_GLIDE) {
             alanberImageLoaderProxy = new GlideImageLoader();
-        } else if (AlanberImageLoaderConfig.getImageLoaderManager() == AlanberImageLoaderConfig.TYPE_PICASSO) {
-            alanberImageLoaderProxy = new PicassoImageLoader();
+        } else if (AlanberImageLoaderConfig.getImageLoaderManager() == AlanberImageLoaderConfig.TYPE_FRESCO) {
+            alanberImageLoaderProxy = new FrescoImageLoader();
         }
     }
 

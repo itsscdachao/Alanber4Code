@@ -5,7 +5,7 @@ package com.itssc.tool_imageloader.config;
  */
 public class AlanberImageLoaderConfig {
     public static int TYPE_GLIDE = 1;
-    public static int TYPE_PICASSO = 2;
+    public static int TYPE_FRESCO = 2;
 
     public static int getImageLoaderManager() {
         return TYPE_GLIDE;
