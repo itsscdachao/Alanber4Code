@@ -17,7 +17,6 @@ public class TestActivity extends BaseCommonActivity implements View.OnClickList
     private Button btn_alanberlog;
     private Button btn_alanberlog_flush;
     private Button btn_crash_spider;
-    private Button btn_flutter;
 
     @Override
     protected BaseCommonPresenter createPresenter() {
