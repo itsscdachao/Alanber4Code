@@ -22,6 +22,11 @@ android {
             debuggable true
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            ndk {
+                //这里要加上，否则debug包会出问题,后面三个为可选，x86建议加上不然部分模拟器回报错
+                abiFilters 'armeabi','armeabi-v7a','x86'
+            }
         }
 
         release {
@@ -30,6 +35,11 @@ android {
             debuggable false
             shrinkResources true//为了使用shrinkResources,你必须启用代码压缩 minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            ndk{
+                //这里其实我觉可以直接是用"armeabi-v7a"，但国内几个大哥之前使用的都是"armeabi"
+                abiFilters 'armeabi'
+            }
         }
     }
 
@@ -84,6 +94,4 @@ dependencies {
     implementation project(':tool_audiorecorder')
     implementation project(':tool_videorecorder')
     implementation project(':tool_takephoto')
-    implementation project(':tool_rn')
-    implementation project(':tool_flutter')
 }

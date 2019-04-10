@@ -23,12 +23,4 @@ include ':tool_audiorecorder'
 include ':tool_videorecorder'
 include ':tool_takephoto'
 include ':tool_navigation_location'
-include ':tool_rn'
-include ':tool_flutter'
 
-//加入flutter引用配置
-setBinding(new Binding([gradle: this]))
-evaluate(new File(
-        settingsDir.parentFile,
-        'tool_flutter/.android/include_flutter.groovy'
-))
