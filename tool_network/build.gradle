@@ -52,6 +52,6 @@ dependencies {
     implementation rootProject.ext.retrofit.converter_gson
     implementation rootProject.ext.retrofit.adapter_rxjava2
 
-    implementation rootProject.ext.rxJava.rxjava
-    implementation rootProject.ext.rxJava.rxandroid
+    implementation rootProject.ext.rxjava.rxjava
+    implementation rootProject.ext.rxjava.rxandroid
 }
