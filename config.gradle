@@ -48,6 +48,5 @@ ext {
 
     greendao = [
             greendao   : 'org.greenrobot:greendao:3.2.2',
-            greendaoClasspath: 'org.greenrobot:greendao-gradle-plugin:3.2.2'
     ]
 }
