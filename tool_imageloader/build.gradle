@@ -42,7 +42,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation rootProject.ext.dependencies.imageloader_glide
-    annotationProcessor rootProject.ext.dependencies.imageloader_glide
-    implementation rootProject.ext.dependencies.imageloader_fresco
+    implementation rootProject.ext.imageloader.imageloader_glide
+    annotationProcessor rootProject.ext.imageloader.imageloader_glide
+    implementation rootProject.ext.imageloader.imageloader_fresco
 }

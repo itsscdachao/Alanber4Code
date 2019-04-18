@@ -43,5 +43,5 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation rootProject.ext.greendao.greendao
+    implementation rootProject.ext.database.database_greendao
 }
