@@ -56,7 +56,7 @@ public class RxJavaUtils {
                 return httpResponseObservable.flatMap(new Function<BaseResponse<T>, Observable<T>>() {
                     @Override
                     public Observable<T> apply(BaseResponse<T> baseResponse) {
-                        if (baseResponse.getErrcode() == 0 && baseResponse.getResult() != null) {
+                        if (baseResponse.getErrorCode() == 200 && baseResponse.getResult() != null) {
                             return createData(baseResponse.getResult());
                         } else {
                             return Observable.error(new RuntimeException());

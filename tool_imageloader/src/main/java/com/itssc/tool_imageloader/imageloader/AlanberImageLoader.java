@@ -29,7 +29,7 @@ public class AlanberImageLoader implements AlanberImageLoaderProxy {
         return alanberImageLoader;
     }
 
-    public AlanberImageLoader() {
+    private AlanberImageLoader() {
         if (AlanberImageLoaderConfig.getImageLoaderManager() == AlanberImageLoaderConfig.TYPE_GLIDE) {
             alanberImageLoaderProxy = new GlideImageLoader();
         } else if (AlanberImageLoaderConfig.getImageLoaderManager() == AlanberImageLoaderConfig.TYPE_FRESCO) {

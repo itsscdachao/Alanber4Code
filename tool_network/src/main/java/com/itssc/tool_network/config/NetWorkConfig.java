@@ -9,7 +9,7 @@ public class NetWorkConfig {
      */
     public static final String NET_WORK_TAG = "alanber_network_moudle";
     /**
-     * 接口host
+     * 接口host_base
      */
     public static final String HOST_BASE = "";
     /**

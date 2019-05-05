@@ -3,24 +3,24 @@ package com.itssc.tool_network.base;
 import java.io.Serializable;
 
 public class BaseResponse<T> implements Serializable {
-    private int errcode;
-    private String errmsg;
+    private int errorCode;
+    private String errorMessage;
     private T result;
 
-    public int getErrcode() {
-        return errcode;
+    public int getErrorCode() {
+        return errorCode;
     }
 
-    public void setErrcode(int errcode) {
-        this.errcode = errcode;
+    public void setErrorCode(int errorCode) {
+        this.errorCode = errorCode;
     }
 
-    public String getErrmsg() {
-        return errmsg;
+    public String getErrorMessage() {
+        return errorMessage;
     }
 
-    public void setErrmsg(String errmsg) {
-        this.errmsg = errmsg;
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
     }
 
     public T getResult() {
