@@ -24,11 +24,14 @@ public abstract class BaseListActivity<T extends BaseListPresenter> extends Acti
         if (mPresenter != null) {
             mPresenter.attachView(this);
         }
+        init();
     }
 
     protected abstract int getLayoutResId();
 
     protected abstract T createPresenter();
+
+    protected abstract void init();
 
     @Override
     protected void onDestroy() {

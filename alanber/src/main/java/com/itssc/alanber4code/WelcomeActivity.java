@@ -11,7 +11,7 @@ public class WelcomeActivity extends BaseCommonActivity {
     }
 
     @Override
-    protected void initSomething() {
+    protected void init() {
 
     }
 

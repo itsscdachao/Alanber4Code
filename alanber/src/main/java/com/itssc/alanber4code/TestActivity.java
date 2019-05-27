@@ -29,7 +29,7 @@ public class TestActivity extends BaseCommonActivity implements View.OnClickList
     }
 
     @Override
-    protected void initSomething() {
+    protected void init() {
         btn_popupwindow = findViewById(R.id.btn_popupwindow);
         btn_dialog = findViewById(R.id.btn_dialog);
         btn_alanberlog = findViewById(R.id.btn_alanberlog);

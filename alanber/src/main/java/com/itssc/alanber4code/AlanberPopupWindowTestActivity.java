@@ -16,7 +16,7 @@ public class AlanberPopupWindowTestActivity extends BaseCommonActivity {
     }
 
     @Override
-    protected void initSomething() {
+    protected void init() {
 
     }
 

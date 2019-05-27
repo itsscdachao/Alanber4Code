@@ -23,14 +23,14 @@ public abstract class BaseCommonActivity<T extends BaseCommonPresenter> extends 
         if (mPresenter != null) {
             mPresenter.attachView(this);
         }
-        initSomething();
+        init();
     }
 
     protected abstract int getLayoutResId();
 
     protected abstract T createPresenter();
 
-    protected abstract void initSomething();
+    protected abstract void init();
 
     @Override
     protected void onDestroy() {
