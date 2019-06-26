@@ -17,6 +17,7 @@ public class TestActivity extends BaseCommonActivity implements View.OnClickList
     private Button btn_alanberlog;
     private Button btn_alanberlog_flush;
     private Button btn_crash_spider;
+    private View btn_password_view;
 
     @Override
     protected BaseCommonPresenter createPresenter() {
@@ -35,12 +36,14 @@ public class TestActivity extends BaseCommonActivity implements View.OnClickList
         btn_alanberlog = findViewById(R.id.btn_alanberlog);
         btn_alanberlog_flush = findViewById(R.id.btn_alanberlog_flush);
         btn_crash_spider = findViewById(R.id.btn_crash_spider);
+        btn_password_view = findViewById(R.id.btn_password_view);
 
         btn_popupwindow.setOnClickListener(this);
         btn_dialog.setOnClickListener(this);
         btn_alanberlog.setOnClickListener(this);
         btn_alanberlog_flush.setOnClickListener(this);
         btn_crash_spider.setOnClickListener(this);
+        btn_password_view.setOnClickListener(this);
     }
 
     @Override
@@ -76,6 +79,8 @@ public class TestActivity extends BaseCommonActivity implements View.OnClickList
             AlanberLog.flush();
         } else if (id == R.id.btn_crash_spider) {
             startActivity(new Intent(this, CrashTestActivity.class));
+        } else if (id == R.id.btn_password_view) {
+            startActivity(new Intent(this, PasswordViewTestActivity.class));
         }
     }
 }

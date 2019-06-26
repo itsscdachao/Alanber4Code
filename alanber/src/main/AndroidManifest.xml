@@ -22,13 +22,13 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <provider
-            android:name="com.itssc.alanber4code.crash_spider.CrashSpiderFileProvider"
+            android:name=".crash_spider.CrashSpiderFileProvider"
             android:authorities="${applicationId}.CrashSpiderFileProvider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
+                android:resource="@xml/file_paths"/>
         </provider>
 
         <activity
@@ -65,6 +65,9 @@
             android:name=".crash_spider.CrashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".PasswordViewTestActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
