@@ -12,5 +12,7 @@ import com.itssc.tool_imageloader.listener.AlanberImageLoadingProgressListener;
 public interface AlanberImageLoaderProxy {
     void initImageLoader(Context context);
 
-    void displayImage(String uri, int defaultImage, ImageView imageView, AlanberImageLoadingListener listener, AlanberImageLoadingProgressListener progressListener);
+    void defaultDisplayImage(Context context, String uri, ImageView imageView, int placeholderImage);
+
+    void displayImage(Context context, String uri, int placeholderImage, ImageView imageView, AlanberImageLoadingListener listener, AlanberImageLoadingProgressListener progressListener);
 }

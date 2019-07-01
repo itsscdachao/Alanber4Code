@@ -3,10 +3,13 @@ package com.itssc.alanber4code;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.itssc.alanber4code.alanberlog.AlanberLogTestActivity;
 import com.itssc.alanber4code.base.activity.BaseCommonActivity;
 import com.itssc.alanber4code.base.presenter.BaseCommonPresenter;
+import com.itssc.tool_imageloader.imageloader.AlanberImageLoader;
+import com.itssc.tool_widget.commonview.DragView.DragView;
 
 import alanberlog.AlanberLog;
 
@@ -18,6 +21,7 @@ public class TestActivity extends BaseCommonActivity implements View.OnClickList
     private Button btn_alanberlog_flush;
     private Button btn_crash_spider;
     private View btn_password_view;
+    private DragView dragview;
 
     @Override
     protected BaseCommonPresenter createPresenter() {
@@ -37,6 +41,8 @@ public class TestActivity extends BaseCommonActivity implements View.OnClickList
         btn_alanberlog_flush = findViewById(R.id.btn_alanberlog_flush);
         btn_crash_spider = findViewById(R.id.btn_crash_spider);
         btn_password_view = findViewById(R.id.btn_password_view);
+        dragview = findViewById(R.id.dragview);
+        AlanberImageLoader.getInstance().defaultDisplayImage(this, "http://cn.bing.com/az/hprichbg/rb/Dongdaemun_ZH-CN10736487148_1920x1080.jpg", dragview, 0);
 
         btn_popupwindow.setOnClickListener(this);
         btn_dialog.setOnClickListener(this);
@@ -44,6 +50,7 @@ public class TestActivity extends BaseCommonActivity implements View.OnClickList
         btn_alanberlog_flush.setOnClickListener(this);
         btn_crash_spider.setOnClickListener(this);
         btn_password_view.setOnClickListener(this);
+        dragview.setOnClickListener(this);
     }
 
     @Override
@@ -81,6 +88,8 @@ public class TestActivity extends BaseCommonActivity implements View.OnClickList
             startActivity(new Intent(this, CrashTestActivity.class));
         } else if (id == R.id.btn_password_view) {
             startActivity(new Intent(this, PasswordViewTestActivity.class));
+        } else if (id == R.id.dragview) {
+            Toast.makeText(this, "i am a robot", Toast.LENGTH_SHORT).show();
         }
     }
 }

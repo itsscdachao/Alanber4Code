@@ -30,4 +30,11 @@
             <enum name="plaintext" value="2"/>
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="dragview">
+        <!--是否需要自动吸边-->
+        <attr name="customIsAttach" format="boolean" />
+        <!--是否可拖曳-->
+        <attr name="customIsDrag" format="boolean" />
+    </declare-styleable>
 </resources>

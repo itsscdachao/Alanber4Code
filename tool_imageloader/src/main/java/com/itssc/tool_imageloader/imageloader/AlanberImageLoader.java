@@ -43,7 +43,12 @@ public class AlanberImageLoader implements AlanberImageLoaderProxy {
     }
 
     @Override
-    public void displayImage(String uri, int defaultImage, ImageView imageView, AlanberImageLoadingListener listener, AlanberImageLoadingProgressListener progressListener) {
-        alanberImageLoaderProxy.displayImage(uri, defaultImage, imageView, listener, progressListener);
+    public void defaultDisplayImage(Context context, String uri, ImageView imageView, int placeholderImage) {
+        alanberImageLoaderProxy.defaultDisplayImage(context, uri, imageView, placeholderImage);
+    }
+
+    @Override
+    public void displayImage(Context context, String uri, int defaultImage, ImageView imageView, AlanberImageLoadingListener listener, AlanberImageLoadingProgressListener progressListener) {
+        alanberImageLoaderProxy.displayImage(context, uri, defaultImage, imageView, listener, progressListener);
     }
 }

@@ -1,56 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.v4.widget.NestedScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/btn_dialog"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="dialog"/>
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btn_popupwindow"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="popupwindow"/>
+                <Button
+                    android:id="@+id/btn_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dialog"/>
 
-            <Button
-                android:id="@+id/btn_alanberlog"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="alanberlog"/>
+                <Button
+                    android:id="@+id/btn_popupwindow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="popupwindow"/>
 
-            <Button
-                android:id="@+id/btn_alanberlog_flush"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="alanberlog-flush"/>
+                <Button
+                    android:id="@+id/btn_alanberlog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="alanberlog"/>
 
-            <Button
-                android:id="@+id/btn_crash_spider"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="crash_spider"/>
+                <Button
+                    android:id="@+id/btn_alanberlog_flush"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="alanberlog-flush"/>
 
-            <Button
-                android:id="@+id/btn_password_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="password_view"/>
+                <Button
+                    android:id="@+id/btn_crash_spider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="crash_spider"/>
 
-        </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+                <Button
+                    android:id="@+id/btn_password_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="password_view"/>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <com.itssc.tool_widget.commonview.DragView.DragView
+            android:id="@+id/dragview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"/>
+    </RelativeLayout>
 </FrameLayout>
